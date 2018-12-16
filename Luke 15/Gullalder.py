@@ -12,9 +12,7 @@ def findPossibleGoldAges():
 	return ages
 
 def checkIfPossible(ages, people):
-
 	possible = 0
-
 	for elem in people:
 		for i in range(0, len(ages)):
 			if elem + ages[i][0] == ages[i][1]:
