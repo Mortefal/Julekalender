@@ -1,4 +1,5 @@
 import sys
+import time
 
 def isPrime(n):
     if n < 2: return False
@@ -11,6 +12,7 @@ sek = [1,3]
 primes = [3]
 
 def sekvens(k):
+	start_time = time.time()
 	sys.setrecursionlimit(5000)
 	temp = []
 
@@ -37,3 +39,4 @@ def sekvens(k):
 	return sekvens(k+1)
 
 print(sekvens(1))
+print("Tok", time.time() - start_time)
